@@ -30,8 +30,9 @@ window.onbeforeunload = function () {
     return false;
 }
 addEventListener("load", (event) => {
-    if (window.location.href != 'about:blank') {
-        blank3r(window.location.href);
-        window.close();
+    if (window.parent !== window) {
+        return false;
     }
+    blank3r(window.location.href);
+    window.close();
 });
