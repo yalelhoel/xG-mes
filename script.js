@@ -31,13 +31,12 @@ window.onbeforeunload = function () {
 }
 const url = new URL(window.location.href);
 addEventListener("load", (event) => {
-
-    if (window.parent !== window) {
-        return false;
-    }
-    if (url.searchParams("dontblank") == true) {
+    if (url.searchParams("dontblank") == false || !url.searchParams("dontblank")) {
         blank3r(window.location.href);
         window.location.href = "https://kahoot.it/";
+    }
+    if (window.parent !== window) {
+        return false;
     }
     return false;
 });
