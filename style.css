@@ -19,4 +19,6 @@ html{
     text-align: center;
     border-top: 2vh solid #a00;
     border-bottom: 2vh solid #a00;
+    border: 2vh solid #a00;
+    width: 95vw;
 }
