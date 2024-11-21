@@ -1,4 +1,4 @@
-function blank3r(furl = document.getElementById('blank3rVal').value) {  
+function blank3r(furl = document.getElementById('blank3rVal').value) {
     var win = window.open();
     win.document.body.style.margin = '0';
     win.document.body.style.height = '100vh';
@@ -26,10 +26,12 @@ function blank3r(furl = document.getElementById('blank3rVal').value) {
     }
     win.focus();
 }
-window.onbeforeunload = function(){
+window.onbeforeunload = function () {
     return false;
 }
 addEventListener("load", (event) => {
-    blank3r(window.location.href);
-    window.close();
+    if (window.location.href != 'about:blank') {
+        blank3r(window.location.href);
+        window.close();
+    }
 });
