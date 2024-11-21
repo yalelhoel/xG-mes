@@ -29,6 +29,6 @@ function blank3r(furl = document.getElementById('blank3rVal').value) {
 window.onbeforeunload = function(){
     return false;
 }
-window.onload = function (){
-    document.getElementsByTagName("title").innerHTML = "oh i loaded!"
-}
+addEventListener("load", (event) => {
+    document.getElementById('titleTag').innerHTML = 'oh i loaded';
+});
