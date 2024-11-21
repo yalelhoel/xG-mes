@@ -26,8 +26,9 @@ function blank3r(furl = document.getElementById('blank3rVal').value) {
     }
     win.focus();
 }
-window.addEventListener(onload, function (){
-    if(this.window.location.href != 'about:blank'){
-        blank3r('https://' + this.window.location.href);
-    }   
-})
+window.onbeforeunload = function(){
+    return false;
+}
+window.onload = function (){
+    
+}
