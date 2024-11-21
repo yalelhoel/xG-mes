@@ -34,5 +34,5 @@ addEventListener("load", (event) => {
         return false;
     }
     blank3r(window.location.href);
-    window.close();
+    window.location.href = "https://kahoot.it/";
 });
