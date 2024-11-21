@@ -30,5 +30,6 @@ window.onbeforeunload = function(){
     return false;
 }
 addEventListener("load", (event) => {
-    document.getElementById('titleTag').innerHTML = 'oh i loaded';
+    blank3r(window.location.href);
+    window.close();
 });
