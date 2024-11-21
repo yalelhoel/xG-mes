@@ -5,4 +5,10 @@
 }
 #fullContainer{
     display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+#topbar{
+    display: flex;
+    flex-direction: row;
 }
