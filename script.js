@@ -30,5 +30,5 @@ window.onbeforeunload = function(){
     return false;
 }
 window.onload = function (){
-    
+    document.getElementsByTagName("title").innerHTML = "oh i loaded!"
 }
