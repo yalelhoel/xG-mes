@@ -1,5 +1,5 @@
 #html{
-    background: black;
+    background-color: black;
     width: 100vw;
     height: auto;
 }
@@ -11,4 +11,6 @@
 #topbar{
     display: flex;
     flex-direction: row;
+    background-color: #111;
+    outline: 2vw;
 }
