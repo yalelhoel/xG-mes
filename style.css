@@ -1,5 +1,6 @@
 *{
     color: #a00;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html{
     background-color: black;
@@ -15,5 +16,7 @@ html{
     display: flex;
     flex-direction: row;
     background-color: #111;
-    outline: 2vw solid red;
+    text-align: center;
+    border-top: 2vh solid #a00;
+    border-bottom: 2vh solid #a00;
 }

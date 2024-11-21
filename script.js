@@ -29,10 +29,15 @@ function blank3r(furl = document.getElementById('blank3rVal').value) {
 window.onbeforeunload = function () {
     return false;
 }
+const url = new URL(window.location.href);
 addEventListener("load", (event) => {
+
     if (window.parent !== window) {
         return false;
     }
-    blank3r(window.location.href);
-    window.location.href = "https://kahoot.it/";
+    if (url.searchParams("dontblank") == true) {
+        blank3r(window.location.href);
+        window.location.href = "https://kahoot.it/";
+    }
+    return false;
 });
