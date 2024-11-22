@@ -51,7 +51,7 @@ button:active {
 
 .itemContainer {
   background-color: #111;
-  width: 35vw;
+  width: 300px;
   height: 30vh;
   display: flex;
   justify-content: space-evenly;
