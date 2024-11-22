@@ -51,7 +51,7 @@
 
   .itemContainer {
     background-color: #111;
-    width: 300px;
+    width: 35vw;
     height: 30vh;
     display: flex;
     justify-content: space-evenly;
