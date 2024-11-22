@@ -1,91 +1,91 @@
 /* css for main page */
 * {
-    color: #a00;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    box-sizing: border-box; 
-  }
-  
-  html {
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-  }
-  
-  #topBar {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    background-color: #111;
-    border: 0.5vmin solid #a00;
-    flex-wrap: wrap;
-    width: 90vw;
-    padding: 1vw; 
-  }
-  
-  .itemContainer {
-    background-color: #111;
-    width: 35vw;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    text-align: center;
-    border-radius: 5px;
-    transition: all 0.2s;
-    flex-basis: 40%;
-  }
-  
-  button,
-  input {
-    background-color: black;
-    color: white;
-    border-radius: 2px;
-    border: 3px solid blue;
-  }
-  
-  input {
-    width: 50%;
-  }
-  
-  input:hover {
-    border: 3px solid #b00;
-  }
-  
-  button:hover {
-    border: 3px outset red;
-  }
-  
-  button:active {
-    border: 3px inset red;
-    color: orange;
-  }
-  
-  #fullContainer {
-    display: flex;
-    row-gap: 2vh;
-    flex-wrap: wrap;
-    flex-direction: row;
-    column-gap: 2vw;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .itemContainer:hover {
-    transform: scale(1.01);
-  }
-  
-  /* css for gmes page */
-  #gContainer {
-    width: 100vw;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto;
-  }
-  
-  .gItem {
-    max-width: 20vw;
-    background: #a00;
-  }
+  color: #a00;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box; 
+}
+
+html {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#topBar {
+  margin: 0;
+  margin: auto;
+  text-align: center;
+  background-color: #111;
+  border: 0.5vmin solid #a00;
+  flex-wrap: wrap;
+  width: 90vw;
+  padding: 1vw; 
+}
+
+
+button,
+input {
+  background-color: black;
+  color: white;
+  border-radius: 2px;
+  border: 3px solid blue;
+}
+
+input {
+  width: 50%;
+}
+
+input:hover {
+  border: 3px solid #b00;
+}
+
+button:hover {
+  border: 3px outset red;
+}
+
+button:active {
+  border: 3px inset red;
+  color: orange;
+}
+
+.itemContainer {
+  background-color: #111;
+  width: 300px;
+  height: 30vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; 
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.2s;
+  flex-basis: 40%;
+}
+
+#fullContainer {
+  display: flex;
+  gap: 3vmin 1vmin;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vmin;
+}
+
+.itemContainer:hover {
+  transform: scale(1.01);
+}
+
+/* css for gmes page */
+#gContainer {
+  width: 100vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+}
+
+.gItem {
+  max-width: 20vw;
+  background: #a00;
+}
