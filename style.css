@@ -19,14 +19,15 @@
     flex-direction: row;
     background-color: #111;
     border: 0.5vmin solid #a00;
+    flex-wrap: wrap;
     width: 90vw;
     padding: 1vw; 
   }
   
   .itemContainer {
     background-color: #111;
-    width: 45vw;
-    height: 35vh;
+    width: 10vw;
+    height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center; 
