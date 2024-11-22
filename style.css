@@ -53,7 +53,7 @@
     background-color: #111;
     width: 35vw;
     height: 30vh;
-    display: flex;
+    display: block;
     align-items: center; 
     text-align: center;
     border-radius: 5px;
