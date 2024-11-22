@@ -17,6 +17,8 @@ html {
     align-items: center;
     width: 100vw;
     flex-wrap: wrap;
+    row-gap: 2vh;
+    column-gap: 2vw;
 }
 
 #topBar {
