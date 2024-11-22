@@ -33,6 +33,7 @@
     text-align: center;
     border-radius: 5px;
     transition: all 0.2s;
+    flex-basis: 40%;
   }
   
   button,
