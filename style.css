@@ -8,6 +8,7 @@ html{
     height: auto;
 }
 #fullContainer{
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,6 +16,7 @@ html{
     width: 100vw;
 }
 #topBar{
+    margin: 0;
     display: flex;
     box-sizing: border-box;
     justify-content: center;
