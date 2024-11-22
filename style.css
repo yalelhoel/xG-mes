@@ -37,6 +37,9 @@ html {
 .itemContainer {
     background-color: #111;
     border-radius: 2.5vw;
+    box-sizing: border-box;
+    padding: 5%;
+    text-align: center;
     width: 45vw;
     height: 35vh;
     overflow: wrap;
