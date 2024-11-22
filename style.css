@@ -1,3 +1,4 @@
+/* css for main page */
 * {
     color: #a00;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -46,4 +47,16 @@ html {
     h1{
         bottom: .5vmin;
     }
+}
+/* css for gmes page */
+#gContainer{
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+}
+.gItem{
+    max-width: 20vw;
+    background: #a00;
 }
