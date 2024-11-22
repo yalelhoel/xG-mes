@@ -72,7 +72,7 @@
   }
   
   .itemContainer:hover {
-    transform: scale(1.01);
+    transform: scale(1.05);
   }
   
   /* css for gmes page */
@@ -86,5 +86,9 @@
   
   .gItem {
     max-width: 20vw;
-    background: #a00;
+    background: #111;
+  }
+  .gImage{
+    width: 100%;
+    height: auto;
   }
