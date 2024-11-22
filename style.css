@@ -1,21 +1,25 @@
-*{
+* {
     color: #a00;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-html{
+
+html {
     background-color: black;
     width: auto;
     height: auto;
 }
-#fullContainer{
+
+#fullContainer {
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     width: 100vw;
+    flex-wrap: wrap;
 }
-#topBar{
+
+#topBar {
     margin: 0;
     display: flex;
     box-sizing: border-box;
@@ -25,7 +29,15 @@ html{
     border-top: 2vh solid #a00;
     border-bottom: 2vh solid #a00;
     border: 2vh solid #a00;
-    width: 95vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    width: 90vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.itemContainer {
+    background-color: #111;
+    border-radius: 2.5vw;
+    width: 45vw;
+    height: 35vh;
+    overflow: wrap;
 }
