@@ -30,12 +30,15 @@ window.onbeforeunload = function () {
     return false;
 }
 const url = new URL(window.location.href);
-addEventListener("load", (event) => {
-    if (window.parent !== window) {
-        return false;
-    }
-   blank3r(window.location.href);
-    window.location.href = "https://kahoot.it/";
 
-  return false;
-});
+if (window.localStorage.getItem("blan3r") == true) {
+    addEventListener("load", (event) => {
+        if (window.parent !== window) {
+            return false;
+        }
+        blank3r(window.location.href);
+        window.location.href = "https://kahoot.it/";
+
+        return false;
+    });
+}
