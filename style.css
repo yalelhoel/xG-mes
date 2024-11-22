@@ -41,8 +41,8 @@ html {
     box-sizing: border-box;
     padding: 5%;
     text-align: center;
-    width: 40vw;
-    height: 32.5vh;
+    width: 35vw;
+    height: 40vh;
     overflow: wrap;
     transition: all .5s;
     gap: 3vmin 3vmin;
