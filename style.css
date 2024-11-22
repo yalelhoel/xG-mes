@@ -19,7 +19,7 @@ html {
     align-items: center;
     width: 100vw;
     flex-wrap: wrap;
-    gap: 2vmin 2vmin;
+    gap: 3vmin 3vmin;
 }
 
 #topBar {
@@ -45,7 +45,7 @@ html {
     height: 35vh;
     overflow: wrap;
     transition: all .5s;
-    gap: 2vmin 2vmin;
+    gap: 3vmin 3vmin;
     box-shadow: #000;
 }
 
