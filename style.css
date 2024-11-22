@@ -45,10 +45,11 @@ html {
     height: 35vh;
     overflow: wrap;
     transition: all .5s;
+    gap: 2vmin 2vmin;
     box-shadow: #000;
 }
 
-.itemContainer{
+.itemContainer:hover{
     transform: scale(1.1);
 }
 /* css for gmes page */
