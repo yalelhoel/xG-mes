@@ -15,6 +15,7 @@ html{
 #topBar{
     display: flex;
     box-sizing: border-box;
+    justify-content: center;
     flex-direction: row;
     background-color: #111;
     border-top: 2vh solid #a00;
