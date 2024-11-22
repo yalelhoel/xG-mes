@@ -43,4 +43,7 @@ html {
     width: 45vw;
     height: 35vh;
     overflow: wrap;
+    h1{
+        bottom: .5vmin;
+    }
 }
