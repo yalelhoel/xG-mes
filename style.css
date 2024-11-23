@@ -1,3 +1,10 @@
+/*Container and sidebar stuff*/
+html{
+  margin: 0;
+}
+body{
+  margin: 0;
+}
 #container{
   background-color: black;
   height: 100vh;
@@ -6,6 +13,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   flex-flow: row;
+  margin: 0;
 }
 #sideBar{
   background-color: #a00;
