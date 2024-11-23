@@ -1,4 +1,7 @@
 /*Container and sidebar stuff*/
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 html{
   margin: 0;
 }
