@@ -20,10 +20,12 @@ body{
 }
 #titleLogo{
   font-size: 2em;
+  text-align: center;
 }
 #sideBar{
   background-color: #800;
   width: auto;
   height: 100vh;
   display: flex;
+  flex-direction: column;
 }
