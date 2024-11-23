@@ -21,6 +21,7 @@ body{
 #titleLogo{
   font-size: 2em;
   text-align: center;
+  display: block;
 }
 #sideBar{
   background-color: #800;
