@@ -18,9 +18,12 @@ body{
   flex-flow: row;
   margin: 0;
 }
+#titleLogo{
+  font-size: 2em;
+}
 #sideBar{
-  background-color: #a00;
-  width: 12.5vw;
+  background-color: #800;
+  width: auto;
   height: 100vh;
   display: flex;
 }
