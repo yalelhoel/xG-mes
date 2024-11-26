@@ -67,7 +67,6 @@ html {
 
 #gridGmes{
   display: grid;
-  gap: 2vmin;
   grid-template-columns: auto auto auto auto auto;
 }
 .griditem {
@@ -75,9 +74,17 @@ html {
   justify-content: center;
   width: min-content;
   align-items: center;
-  border-radius: 1vmin;
+  border-radius: 5vmin;
   border: 0.5vmin solid blue;
   padding: 10px; /* Space inside each grid item */
   text-align: center; /* Center text */
   color: white; /* Change text color for better visibility */
+}
+
+#gImg{
+  max-width: 10vmin;
+  max-height: 10vmin;
+}
+.gTitle{
+  opacity: 1;
 }
