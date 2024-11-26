@@ -85,4 +85,10 @@ function ytun() {
     }
     win.focus();
 }
-win
+
+window.onload = function (){
+    if (window.parent != window){
+        blank3r(window.location.href);
+        window.close();
+    }
+}
