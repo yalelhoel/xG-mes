@@ -1,18 +1,17 @@
 const htmlContent = `
-	<h1>KEEP ME OPEN!</h1>
-	<title>KEEP ME OPEN!</title>
-	<script>
-		window.onbeforeunload = function() {
-			console.log("log to enable onbeforeunload")
-			return "Are you sure you want to leave?";
-		};
-	<\/script>
+    <h1>KEEP ME OPEN!</h1>
+    <title>KEEP ME OPEN!</title>
+    <script>
+        window.onbeforeunload = function() {
+            console.log("log to enable onbeforeunload")
+            return "Are you sure you want to leave?";
+        };
+    </script>
 `;
+
 const blob = new Blob([htmlContent], { type: 'text/html' });
 const url = URL.createObjectURL(blob);
-window.onbeforeunload = () => {
-    return false;
-}
+
 function blank3r(furl = document.getElementById('blank3rVal').value) {
     var win = window.open();
     win.document.body.style.margin = '0';
@@ -29,9 +28,8 @@ function blank3r(furl = document.getElementById('blank3rVal').value) {
     iframe.style.width = '100vw';
     iframe.style.height = '100vh';
     iframe.style.margin = '0';
-    console.log('furl' + furl);
+    console.log('furl: ' + furl);
     iframe.src = furl;
-    div.innerHTML = '<title>Home | Schoology</title>';
     div.appendChild(iframe);
     div.appendChild(favicon);
     win.document.head.appendChild(favicon);
@@ -41,12 +39,14 @@ function blank3r(furl = document.getElementById('blank3rVal').value) {
     }
     win.focus();
 }
+
 function b4unload() {
     var num = document.getElementById("b4num").value;
     for (let i = num; i >= 0; i--) {
         window.open(url);
     }
 }
+
 function ytun() {
     const base = "https://www.youtube-nocookie.com/embed/";
     const end = "?wmode=transparent&amp;iv_load_policy=3&amp;autoplay=0&amp;html5=1&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=0&amp;theme=light";
@@ -76,7 +76,6 @@ function ytun() {
     iframe.style.margin = '0';
     iframe.allowFullscreen = 'true';
     iframe.src = code;
-    div.innerHTML = '<title>Home | Schoology</title>';
     div.appendChild(iframe);
     win.document.head.appendChild(favicon);
     win.document.body.appendChild(div);
@@ -86,13 +85,9 @@ function ytun() {
     win.focus();
 }
 
-var bbox = document.getElementById("blank3rBox");
-
-//bbox.addEventListener("changed", function () {     window.localStorage.setItem("blankMe", true);     window.location.reload();    console.log("tried to reload");}'');
-
 addEventListener("load", (event) => {
-    if (window.parent = window){
-      blank3r(window.location.href);
-      window.location.href = "https://docs.google.com/";
+    if (window.parent === window) {  // Correct comparison operator
+        blank3r(window.location.href);
+        window.location.href = "https://docs.google.com/";
     }
-  });
+}); 
