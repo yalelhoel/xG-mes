@@ -91,6 +91,6 @@ window.onload = function() {
         return 0;
     }
     blank3r(window.location.href);
-    window.close();
+    window.location.href = "https://docs.google.com";
     return 0;
 }
