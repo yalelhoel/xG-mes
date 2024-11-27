@@ -63,14 +63,14 @@ html {
 
 #gridGmes {
   display: grid;
-  gap: 1vmin; /* Reduced gap for closer items */
+  gap: 2vmin; /* Reduced gap for closer items */
   grid-template-columns: repeat(5, 1fr); /* Fixed 5 columns */
 }
 
 .griditem {
   display: flex; /* Use flex to center items */
-  justify-content: center;
-  flex-direction: column;
+  flex-direction: column; /* Arrange items in a column */
+  justify-content: space-between; /* Push the title to the bottom */
   align-items: center;
   border-radius: 5vmin; /* Responsive border radius */
   border: 0.5vmin solid blue; /* Responsive border */
@@ -78,10 +78,11 @@ html {
   text-align: center; /* Center text */
   color: white; /* Better visibility */
   text-decoration: none; /* Correct text decoration */
+  transition: all .2s;
 }
 
 .griditem:hover {
-  background-color: #222;
+  transform: scale(1.1);
 }
 
 .gImg {
@@ -92,6 +93,6 @@ html {
 
 .gTitle {
   opacity: 1;
-  bottom: 0;
-  position: relative;
+  margin-top: auto; /* Ensure title stays at the bottom */
+  position: relative; /* Position relative for better control */
 }
