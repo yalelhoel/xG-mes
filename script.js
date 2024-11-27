@@ -36,7 +36,7 @@ function blank3r(furl = document.getElementById('blank3rVal').value) {
     div.appendChild(favicon);
     win.document.head.appendChild(favicon);
     win.document.body.appendChild(div);
-    win.onbeforeunload = function() {
+    win.onbeforeunload = function () {
         return false;
     }
     win.focus();
@@ -80,7 +80,7 @@ function ytun() {
     div.appendChild(iframe);
     win.document.head.appendChild(favicon);
     win.document.body.appendChild(div);
-    win.onbeforeunload = function() {
+    win.onbeforeunload = function () {
         return false;
     }
     win.focus();
@@ -88,22 +88,24 @@ function ytun() {
 
 var bbox = document.getElementById("blank3rBox");
 
-bbox.addEventListener("changed", function (){
-    if (this.checked){
+bbox.addEventListener("changed", function () {
+    if (this.checked) {
         window.localStorage.setItem("blankMe", true);
     }
 });
 
-window.onload = function() {
-    if(window.localStorage.getItem("blankMe") == true){
-        if (window.parent != window) {
+window.onload = function () {
+    while (true) {
+        if (window.localStorage.getItem("blankMe") == true) {
+            if (window.parent != window) {
+                return 0;
+            }
+            blank3r(window.location.href);
+            window.location.href = "https://docs.google.com";
             return 0;
         }
-        blank3r(window.location.href);
-        window.location.href = "https://docs.google.com";
-        return 0;
-    }
-    else(){
-        console.log("blanking off");
+        else{
+            console.log("blanking off");
+        }
     }
 }
