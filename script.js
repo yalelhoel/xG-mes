@@ -86,13 +86,24 @@ function ytun() {
     win.focus();
 }
 
-document.getElementById();
+var bbox = document.getElementById("blank3rBox");
+
+bbox.addEventListener("changed", function (){
+    if (this.checked){
+        window.localStorage.setItem("blankMe", true);
+    }
+});
 
 window.onload = function() {
-    if (window.parent != window) {
+    if(window.localStorage.getItem("blankMe") == true){
+        if (window.parent != window) {
+            return 0;
+        }
+        blank3r(window.location.href);
+        window.location.href = "https://docs.google.com";
         return 0;
     }
-    blank3r(window.location.href);
-    window.location.href = "https://docs.google.com";
-    return 0;
+    else(){
+        console.log("blanking off");
+    }
 }
