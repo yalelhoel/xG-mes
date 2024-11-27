@@ -65,27 +65,38 @@ html {
   padding: .5%;
 }
 
-#gridGmes{
+#gridGmes {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
 }
+
 .griditem {
-  display: flex; /* Use flex to center items */
+  display: flex;
+  /* Use flex to center items */
   justify-content: center;
   flex-direction: column;
   width: min-content;
   align-items: center;
   border-radius: 5vmin;
   border: 0.5vmin solid blue;
-  padding: 10px; /* Space inside each grid item */
-  text-align: center; /* Center text */
-  color: white; /* Change text color for better visibility */
+  padding: 10px;
+  /* Space inside each grid item */
+  text-align: center;
+  /* Center text */
+  color: white;
+  /* Change text color for better visibility */
 }
 
-#gImg{
-  max-width: 100%;
+.griditem:hover{
+  background-color: #222;
+}
+
+#gImg {
+  object-fit: cover;
+  width: 100%;
   max-height: 100%;
 }
-.gTitle{
+
+.gTitle {
   opacity: 1;
 }
