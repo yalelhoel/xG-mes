@@ -63,8 +63,8 @@ html {
 
 #gridGmes {
   display: grid;
-  gap: 2vmin; /* Responsive gap between items */
-  grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr)); /* Responsive grid */
+  gap: 1vmin; /* Reduced gap for closer items */
+  grid-template-columns: repeat(5, 1fr); /* Fixed 5 columns */
 }
 
 .griditem {
@@ -74,7 +74,7 @@ html {
   align-items: center;
   border-radius: 5vmin; /* Responsive border radius */
   border: 0.5vmin solid blue; /* Responsive border */
-  padding: 2vmin; /* Responsive padding inside grid items */
+  padding: 1.5vmin; /* Adjusted padding inside grid items */
   text-align: center; /* Center text */
   color: white; /* Better visibility */
   text-decoration: none; /* Correct text decoration */
