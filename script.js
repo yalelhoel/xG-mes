@@ -36,7 +36,7 @@ function blank3r(furl = document.getElementById('blank3rVal').value) {
     div.appendChild(favicon);
     win.document.head.appendChild(favicon);
     win.document.body.appendChild(div);
-    win.onbeforeunload = function () {
+    win.onbeforeunload = function() {
         return false;
     }
     win.focus();
@@ -80,15 +80,17 @@ function ytun() {
     div.appendChild(iframe);
     win.document.head.appendChild(favicon);
     win.document.body.appendChild(div);
-    win.onbeforeunload = function () {
+    win.onbeforeunload = function() {
         return false;
     }
     win.focus();
 }
 
-window.onload = function (){
-    if (window.parent != window){
-        blank3r(window.location.href);
-        window.close();
+window.onload = function() {
+    if (window.parent != window) {
+        return 0;
     }
+    blank3r(window.location.href);
+    window.close();
+    return 0;
 }
