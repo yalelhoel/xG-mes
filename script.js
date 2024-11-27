@@ -91,7 +91,7 @@ var bbox = document.getElementById("blank3rBox");
 //bbox.addEventListener("changed", function () {     window.localStorage.setItem("blankMe", true);     window.location.reload();    console.log("tried to reload");}'');
 
 window.onload = function () {
-    if (/*window.localStorage.getItem("blankMe") == true*/window.parent != window) {
+    if (window.parent != window) {
         console.log("blanking");
         if (window.parent != window) {
             return 0;
