@@ -86,8 +86,21 @@ function ytun() {
 }
 
 addEventListener("load", (event) => {
-    if (window.parent === window) {  // Correct comparison operator
-        blank3r(window.location.href);
-        window.location.href = "https://docs.google.com/";
-    }
+  const checkbox = document.getElementById('blank3rBox');
+  const checkboxState = localStorage.getItem('blank3rChecked');
+  checkbox.checked = checkboxState === 'true';
+  if (checkbox.checked && window.parent == window) {
+      blank3r(window.location.href);
+      window.location.href = "https://docs.google.com/";
+  }
+  checkbox.addEventListener('change', function() {
+      localStorage.setItem('blank3rChecked', checkbox.checked);
+      if (window.parent != window){
+        window.parent.location.href = window.location.href;
+        return;
+      }
+      window.location.reload();
+
+  });
+
 }); 
