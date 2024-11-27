@@ -33,6 +33,7 @@ function blank3r(furl = document.getElementById('blank3rVal').value) {
     div.appendChild(iframe);
     div.appendChild(favicon);
     win.document.head.appendChild(favicon);
+    win.document.head.appendChild(title);
     win.document.body.appendChild(div);
     win.onbeforeunload = function () {
         return false;
