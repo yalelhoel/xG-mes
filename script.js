@@ -104,8 +104,6 @@ window.onload = function () {
             window.location.href = "https://docs.google.com";
             return 0;
         }
-        else{
-            console.log("blanking off");
-        }
+        console.log("blanking off");
     }
 }
