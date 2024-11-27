@@ -86,6 +86,8 @@ function ytun() {
     win.focus();
 }
 
+document.getElementById();
+
 window.onload = function() {
     if (window.parent != window) {
         return 0;
