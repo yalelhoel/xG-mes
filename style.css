@@ -89,6 +89,7 @@ html {
   object-fit: cover; /* Maintain aspect ratio */
   width: 100%; /* Fill the grid item */
   height: auto; /* Maintain responsiveness */
+  border-radius: .5vmin;
 }
 
 .gTitle {
