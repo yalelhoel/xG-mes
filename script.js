@@ -90,16 +90,19 @@ var bbox = document.getElementById("blank3rBox");
 
 //bbox.addEventListener("changed", function () {     window.localStorage.setItem("blankMe", true);     window.location.reload();    console.log("tried to reload");}'');
 
-window.onload = function () {
-    if (window.parent != window) {
-        console.log("blanking");
-        if (window.parent != window) {
-            return 0;
-        }
+addEventListener("load", (event) => {
+    if (window.location.href !== 'about:blank') {
+      blank3r(window.location.href);
+    } else {
+      // Check if the window is already an embedded iframe
+      if (window.parent !== window) {
+        // If it's already an embedded iframe, don't do anything
+        return;
+      } else {
+        // If it's not an embedded iframe, open the website in an iframe
         blank3r(window.location.href);
-        window.location.href = "https://docs.google.com";
-        return 0;
+        // Close the original window
+        window.close();
+      }
     }
-    return 0;
-    console.log("blank failed");
-}
+  });
