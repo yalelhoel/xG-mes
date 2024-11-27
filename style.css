@@ -72,6 +72,7 @@ html {
 .griditem {
   display: flex; /* Use flex to center items */
   justify-content: center;
+  flex-direction: column;
   width: min-content;
   align-items: center;
   border-radius: 5vmin;
