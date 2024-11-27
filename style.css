@@ -83,8 +83,8 @@ html {
 }
 
 #gImg{
-  max-width: 10vmin;
-  max-height: 10vmin;
+  max-width: 100%;
+  max-height: 100%;
 }
 .gTitle{
   opacity: 1;
