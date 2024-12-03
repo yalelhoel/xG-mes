@@ -7,8 +7,8 @@ const htmlContent = `
             return "Are you sure you want to leave?";
         };
     </script>
-`;
-
+    `;
+const mURL = new URL(window.location.href);
 const blob = new Blob([htmlContent], { type: 'text/html' });
 const url = URL.createObjectURL(blob);
 
@@ -104,3 +104,9 @@ addEventListener("load", (event) => {
   });
 
 }); 
+
+function gloader(){
+    var loadURL = mURL.searchParams.get("gUrl");
+    var frame = document.getElementById("gFrame");
+    frame.src = loadURL;
+}
