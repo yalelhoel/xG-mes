@@ -15,7 +15,11 @@
 	<script src="https://cdn.jsdelivr.net/npm/eruda"></script>
 	<script>eruda.init();</script>
 	<script src="/script.js" defer></script>
-	<script>window.onload = function () { gloader() }</script>
+	<script>
+		window.addEventListener("load", function () {
+			gloader();
+		})
+	</script>
 </head>
 
 <body>
@@ -24,25 +28,26 @@
 			<a id="title" href="/">
 				<img src="/download.png" alt="Logo">
 				<h2>_sudo11's site!</h2>
-				<br>
-				<a href='https://www.free-counters.org/'>www.free-Counter.org</a>
-				<script type='text/javascript'
-					src='https://www.freevisitorcounters.com/auth.php?id=f714edf9cbad0fae1e6c96bee70f8cb33e0ce098'></script>
-				<script type="text/javascript"
-					src="https://www.freevisitorcounters.com/en/home/counter/1267822/t/1"></script>
-				<br>
-				<label class="switch">
-					<br>
-					<br>
-					<p style="justify-self: left; text-align: left;">open in about:blank (nothing saves in about:blank)
-					</p>
-					<br>
-					<br>
-					<br>
-					<input type="checkbox" id="blank3rBox">
-					<span class="slider round"></span>
-				</label>
 			</a>
+			<br>
+			<a href='https://www.free-counters.org/'>www.free-Counter.org</a>
+			<script type='text/javascript'
+				src='https://www.freevisitorcounters.com/auth.php?id=f714edf9cbad0fae1e6c96bee70f8cb33e0ce098'></script>
+			<script type="text/javascript"
+				src="https://www.freevisitorcounters.com/en/home/counter/1267822/t/1"></script>
+			<br>
+			<label class="switch">
+				<br>
+				<br>
+				<p style="justify-self: left; text-align: left;">open in about:blank (nothing saves in about:blank)
+				</p>
+				<br>
+				<br>
+				<br>
+				<input type="checkbox" id="blank3rBox">
+				<span class="slider round"></span>
+			</label>
+
 		</div>
 		<div id="mainContent">
 			<iframe id="gframe" frameborder="0">Get a new(er) browser dingdong \(*0*)/</iframe>
