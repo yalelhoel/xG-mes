@@ -8,7 +8,6 @@ const htmlContent = `
         };
     </script>
     `;
-const mURL = new URL(window.location.href);
 const blob = new Blob([htmlContent], { type: 'text/html' });
 const url = URL.createObjectURL(blob);
 
@@ -110,7 +109,9 @@ function winder(gurl){
     window.location.href = "/gLoader?gload=" + gVar;
 }
 function gloader(){
+    const mURL = new URL(window.location.href);
     var loadURL = mURL.searchParams.get("gload");
+    console.log(loadURL);
     var frame = document.getElementById("gframe");
     frame.src = loadURL;
 }
