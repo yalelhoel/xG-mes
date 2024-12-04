@@ -93,7 +93,10 @@ html {
   border-radius: 1vmin;
 }
 
-#gframe
+#gframe{
+  width: 100%;
+  height: 100%;
+}
 
 .gTitle {
   opacity: 1;
