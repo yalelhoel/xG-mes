@@ -79,6 +79,7 @@ html {
   color: white; /* Better visibility */
   text-decoration: none; /* Correct text decoration */
   transition: all .2s;
+  background-color: #111;
 }
 
 .griditem:hover {

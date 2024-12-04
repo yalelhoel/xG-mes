@@ -105,8 +105,12 @@ addEventListener("load", (event) => {
 
 }); 
 
+function winder(gurl){
+    window.location.href = "/gLoader"
+    var gVar = window.location.href + "/g-mes/" + gurl;
+}
 function gloader(){
-    var loadURL = mURL.searchParams.get("gUrl");
+    var loadURL = mURL.searchParams.get("gload");
     var frame = document.getElementById("gFrame");
     frame.src = loadURL;
 }
