@@ -93,6 +93,8 @@ html {
   border-radius: 1vmin;
 }
 
+#gframe
+
 .gTitle {
   opacity: 1;
   margin-top: auto; /* Ensure title stays at the bottom */

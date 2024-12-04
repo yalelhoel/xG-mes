@@ -111,6 +111,6 @@ function winder(gurl){
 }
 function gloader(){
     var loadURL = mURL.searchParams.get("gload");
-    var frame = document.getElementById("gFrame");
+    var frame = document.getElementById("gframe");
     frame.src = loadURL;
 }
