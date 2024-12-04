@@ -106,8 +106,8 @@ addEventListener("load", (event) => {
 }); 
 
 function winder(gurl){
-    window.location.href = "/gLoader"
-    var gVar = window.location.href + "/g-mes/" + gurl;
+    var gVar =  "/g-mes/" + gurl;
+    window.location.href = "/gLoader?gload=" + gVar;
 }
 function gloader(){
     var loadURL = mURL.searchParams.get("gload");
