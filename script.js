@@ -7,8 +7,7 @@ const htmlContent = `
             return "Are you sure you want to leave?";
         };
     </script>
-`;
-
+    `;
 const blob = new Blob([htmlContent], { type: 'text/html' });
 const url = URL.createObjectURL(blob);
 
@@ -104,3 +103,15 @@ addEventListener("load", (event) => {
   });
 
 }); 
+
+function winder(gurl){
+    var gVar =  "/g-mes/" + gurl;
+    window.location.href = "/gLoader?gload=" + gVar;
+}
+function gloader(){
+    const mURL = new URL(window.location.href);
+    var loadURL = mURL.searchParams.get("gload");
+    console.log(loadURL);
+    var frame = document.getElementById("gframe");
+    frame.src = loadURL;
+}

@@ -25,7 +25,9 @@ html {
   flex-direction: column;
   align-items: center;
 }
-
+#blankerWarn{
+  width: 100%;
+}
 #title {
   display: block;
   align-self: center;
@@ -79,6 +81,7 @@ html {
   color: white; /* Better visibility */
   text-decoration: none; /* Correct text decoration */
   transition: all .2s;
+  background-color: #111;
 }
 
 .griditem:hover {
@@ -90,6 +93,11 @@ html {
   width: 100%; /* Fill the grid item */
   height: auto; /* Maintain responsiveness */
   border-radius: 1vmin;
+}
+
+#gframe{
+  width: 100%;
+  height: 100%;
 }
 
 .gTitle {
