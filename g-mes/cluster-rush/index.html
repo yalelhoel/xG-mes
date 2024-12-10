@@ -6,40 +6,38 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Cluster Rush</title>
   <link rel="icon" href="./icon.jpg">
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <style>
-    *{
-      margin: 0;  
+    html, body, canvas{
+      padding: 0;
+      margin: 0;
     }
     /* a style sheet needs to be present for cursor hiding and custom cursors to work. */
   </style>
 </head>
 
 <body>
-  <canvas onclick="jake()" class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" style="z-index: -2;"></canvas>
+  <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="768px" width="1333px"></canvas>
   <script type="text/javascript">
-    var canvas;
-    canvas = document.getElementById('canvas');
-    function jake() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    }
     var Module = {
       TOTAL_MEMORY: 268435456,
       errorhandler: null, // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
       compatibilitycheck: null,
-      backgroundColor: "#111111",
+      backgroundColor: "#222C36",
       splashStyle: "Dark",
-      dataUrl: "./Release/NG.data",
-      codeUrl: "./Release/NG.js",
-      asmUrl: "./Release/NG.asm.js",
-      memUrl: "./Release/NG.mem",
+      dataUrl: "Release/NG.data",
+      codeUrl: "Release/NG.js",
+      asmUrl: "Release/NG.asm.js",
+      memUrl: "Release/NG.mem",
     };
-    console.log("If the file NG.mem returns a 404 error, that is ok!")
-    canvas.addEventListener("load", jake());
+    console.log("If the file NG.mem returns a 404 error, that is ok!");
   </script>
-  <script src="Release/UnityLoader.js"></script>
+  <script defer src="./Release/UnityLoader.js"></script>
   <script src="/js/main.js"></script>
+  <script async="false">
+    var canvas = document.getElementById("canvas");
+    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth;
+  </script>
 </body>
 
 </html>
