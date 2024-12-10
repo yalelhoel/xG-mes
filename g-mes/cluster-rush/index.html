@@ -20,8 +20,7 @@
   <script type="text/javascript">
     var canvas;
     canvas = document.getElementById('canvas');
-    window.onload = window.onresize = function jake() {
-
+    function jake() {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
     }
@@ -37,6 +36,7 @@
       memUrl: "./Release/NG.mem",
     };
     console.log("If the file NG.mem returns a 404 error, that is ok!")
+    canvas.addEventListener("load", jake());
   </script>
   <script src="Release/UnityLoader.js"></script>
   <script src="/js/main.js"></script>
