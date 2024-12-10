@@ -7,10 +7,13 @@
   <title>Cluster Rush</title>
   <link rel="icon" href="./icon.jpg">
   <style>
-    html, body, canvas{
+    html,
+    body,
+    canvas {
       padding: 0;
       margin: 0;
     }
+
     /* a style sheet needs to be present for cursor hiding and custom cursors to work. */
   </style>
 </head>
@@ -24,10 +27,10 @@
       compatibilitycheck: null,
       backgroundColor: "#222C36",
       splashStyle: "Dark",
-      dataUrl: "Release/NG.data",
-      codeUrl: "Release/NG.js",
-      asmUrl: "Release/NG.asm.js",
-      memUrl: "Release/NG.mem",
+      dataUrl: "./Release/NG.data",
+      codeUrl: "./Release/NG.js",
+      asmUrl: "./Release/NG.asm.js",
+      memUrl: "./Release/NG.mem",
     };
     console.log("If the file NG.mem returns a 404 error, that is ok!");
   </script>
@@ -35,8 +38,10 @@
   <script src="/js/main.js"></script>
   <script async="false">
     var canvas = document.getElementById("canvas");
-    canvas.height = window.innerHeight;
-    canvas.width = window.innerWidth;
+    canvas.onclick = function () {
+      canvas.height = window.innerHeight;
+      canvas.width = window.innerWidth;
+    }
   </script>
 </body>
 
