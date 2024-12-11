@@ -54,7 +54,7 @@ html {
 }
 
 #mainContent {
-  padding: 2%; /* Responsive padding */
+  padding: 1%; /* Responsive padding */
   overflow-y: auto; /* Enable vertical scrolling */
   flex-grow: 1; /* Allow it to grow and fill available space */
 }
@@ -79,7 +79,8 @@ html {
   align-items: center;
   border-radius: 5vmin; /* Responsive border radius */
   border: 0.5vmin solid blue; /* Responsive border */
-  padding: 1.5vmin; /* Adjusted padding inside grid items */
+  padding-bottom: .5vmin; /* Adjusted padding inside grid items */
+  padding: 0;
   text-align: center; /* Center text */
   color: white; /* Better visibility */
   text-decoration: none; /* Correct text decoration */
@@ -94,8 +95,9 @@ html {
 .gImg {
   object-fit: cover; /* Maintain aspect ratio */
   width: 100%; /* Fill the grid item */
-  height: auto; /* Maintain responsiveness */
-  border-radius: 1vmin;
+  height: 100%; /* Maintain responsiveness */
+  border-top-left-radius: 5vmin;
+  border-top-right-radius: 5vmin;
 }
 
 #gframe{
@@ -105,8 +107,11 @@ html {
 
 .gTitle {
   opacity: 1;
+  width: 100%;
   margin-top: auto; /* Ensure title stays at the bottom */
   position: relative; /* Position relative for better control */
+  padding-top: 1vmin;
+  border-top: 1vmin solid #a00;
 }
 
 /*stole from w3schools!*/

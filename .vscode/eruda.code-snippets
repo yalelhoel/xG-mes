@@ -1,0 +1,10 @@
+{
+  "eruda": {
+    "scope": "html",
+    "prefix": "eruda",
+    "body": [
+      "<script src=\"https://cdn.jsdelivr.net/npm/eruda\"></script>\n  <script>eruda.init();</script>"
+    ],
+    "description": "inspecter"
+  }
+}

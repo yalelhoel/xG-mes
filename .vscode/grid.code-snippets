@@ -1,0 +1,10 @@
+{
+  "grid": {
+    "scope": "html",
+    "prefix": "bgrid",
+    "body": [
+      "<button class=\"griditem\" onclick=\"winder('')\">\n\t\t\t\t\t<img class=\"gImg\" src=\"./g-mes/\">\n\t\t\t\t\t<h3 class=\"gTitle\"></h3>\n\t\t\t\t</button>"
+    ],
+    "description": "gridder"
+  }
+}
