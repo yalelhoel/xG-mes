@@ -40,7 +40,10 @@ html {
 #title:hover {
   background-color: #444;
 }
-
+#tImg{
+  max-width: 100%;
+  height: auto;
+}
 #links {
   list-style: none;
   text-align: left;

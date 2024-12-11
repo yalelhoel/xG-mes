@@ -116,3 +116,8 @@ function gloader(){
     var frame = document.getElementById("gframe");
     frame.src = loadURL;
 }
+
+function fullscreen(){
+    var gframe = document.getElementById("gframe");
+    
+}
