@@ -92,6 +92,8 @@ button:active {
   /* Enable vertical scrolling */
   flex-grow: 1;
   /* Allow it to grow and fill available space */
+  display: flex;
+  flex-direction: column;
 }
 
 #contentTitle {
@@ -232,3 +234,10 @@ input:checked+.slider:before {
 }
 
 /*End of theft*/
+#fscreenb{
+  display: block;
+  text-align: center;
+  align-self: center;
+  font-size: 10vmin;
+  height: auto;
+}
