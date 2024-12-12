@@ -46,6 +46,7 @@ button:active {
 
 #sidebar {
   width: 17.5vw;
+  min-width: 17.5vw;
   /* Responsive width for sidebar */
   background-color: #111;
   display: flex;
