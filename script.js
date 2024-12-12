@@ -86,30 +86,30 @@ function ytun() {
 }
 
 addEventListener("load", (event) => {
-  const checkbox = document.getElementById('blank3rBox');
-  const checkboxState = localStorage.getItem('blank3rChecked');
-  checkbox.checked = checkboxState === 'true';
-  if (checkbox.checked && window.parent == window) {
-      blank3r(window.location.href);
-      window.location.href = "https://docs.google.com/";
-  }
-  checkbox.addEventListener('change', function() {
-      localStorage.setItem('blank3rChecked', checkbox.checked);
-      if (window.parent != window){
-        window.parent.location.href = window.location.href;
-        return;
-      }
-      window.location.reload();
+    const checkbox = document.getElementById('blank3rBox');
+    const checkboxState = localStorage.getItem('blank3rChecked');
+    checkbox.checked = checkboxState === 'true';
+    if (checkbox.checked && window.parent == window) {
+        blank3r(window.location.href);
+        window.location.href = "https://docs.google.com/";
+    }
+    checkbox.addEventListener('change', function () {
+        localStorage.setItem('blank3rChecked', checkbox.checked);
+        if (window.parent != window) {
+            window.parent.location.href = window.location.href;
+            return;
+        }
+        window.location.reload();
 
-  });
+    });
 
-}); 
+});
 
-function winder(gurl){
-    var gVar =  "/g-mes/" + gurl;
+function winder(gurl) {
+    var gVar = "/g-mes/" + gurl;
     window.location.href = "/gLoader?gload=" + gVar;
 }
-function gloader(){
+function gloader() {
     const mURL = new URL(window.location.href);
     var loadURL = mURL.searchParams.get("gload");
     console.log(loadURL);
@@ -117,7 +117,7 @@ function gloader(){
     frame.src = loadURL;
 }
 
-function fullscreen(){
+function fullscreen() {
     var gframe = document.getElementById("gframe");
-    
+    gframe.requestFullscreen();
 }
